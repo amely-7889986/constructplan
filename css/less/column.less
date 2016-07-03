@@ -1,0 +1,119 @@
+.container{
+	width: 100%;
+}
+.main{
+	width: 1000px;
+	margin: 0 auto;
+}
+.content{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	background: url(../../images/body-bg.png) top center no-repeat;
+}
+.column{
+	width: 1000px;
+	overflow: hidden;
+	.col-long{
+		display: block;
+		width: 624px;
+		margin-bottom: 20px;
+		border: 1px solid #ddd;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+		background: #fff;
+		overflow: hidden;
+	}
+	.col-sort{
+		display: block;
+		width: 356px;
+		margin-bottom: 20px;
+		background: #fff;
+		border: 1px solid #ddd;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+		overflow: hidden;
+	}
+	.col-list{
+		display: block;
+		padding: 8px 8px;
+		overflow: hidden;
+		.col-img{
+			display: block;
+			width: 320px;
+			height: 220px;
+			margin-top: 14px;
+		}
+		.col-img img{
+			width: 100%;
+		}
+		.col-txt{
+			display: block;
+			width: 260px;
+			height: 220px;
+			margin-top: 14px;
+			margin-left: 24px;
+			font-size: 12px;
+			color: #008ced;
+			line-height: 22px;
+			text-indent: 24px;
+			overflow: hidden;
+		}
+		ul li{
+			display: block;
+			height: 38px;
+			line-height: 38px;
+			font-size: 12px;
+			color: #008ced;
+			border-bottom: 1px dotted #ddd;
+			a{
+				display: inline-block;
+				width: 78%;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			    -o-text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			a:hover{
+				color: #3a494e;
+			}
+			span{
+				display: inline-block;
+				width: 22%;
+				text-align: right;
+				color: #a3b1b6;
+				overflow: hidden;
+			}
+		}
+	}
+}
+.col-tit{
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	background: url(../../images/item-bg.png) left center repeat-x;
+	border-bottom: 1px solid #ddd;
+	span{
+		display: inline-block;
+		float: left;
+	}
+	.tit{
+		padding: 0 20px;
+		color: #fff;
+		background: url(../../images/itemtit-bg1.png) left center repeat-x;
+	}
+	.tit-r{
+		width: 12px;
+		height: 36px;
+		background: url(../../images/itemtit-bg2.png) left center no-repeat;
+	}
+	a.more{
+		font-size: 12px;
+		padding-right: 12px;
+		color: #f29a76;
+		float: right;
+	}
+	a:hover.more{
+		text-decoration: underline;
+	}
+	}
