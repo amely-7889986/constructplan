@@ -689,16 +689,19 @@ input:-ms-input-placeholder {
 }
 .tophead .search input {
   display: inline-block;
+  float: left;
   width: 240px;
-  height: 32px;
+  height: 30px;
   border: 1px solid #008cbe;
   padding-left: 8px;
 }
 .tophead .search a.btn-search {
   display: inline-block;
+  float: left;
   height: 32px;
   line-height: 32px;
   padding: 0 18px;
+  margin-left: 4px;
   color: #fff;
   background: url(../../images/search-bg.png) left center repeat-x;
   border: 1px solid #008cbe;
@@ -831,6 +834,61 @@ input:-ms-input-placeholder {
 }
 .info-box .pageinfo {
   display: block;
+  padding: 0 8px;
+}
+.info-box .pageinfo h2.pagetit {
+  text-align: center;
+  font-size: 18px;
+  color: #008cbe;
+  margin: 12px 0;
+}
+.info-box .pageinfo .pagetime {
+  text-align: center;
+  font-size: 12px;
+  color: #3a494e;
+}
+.info-box .pageinfo .info {
+  font-size: 12px;
+  color: #3a494e;
+  margin-top: 12px;
+}
+.info-box .pageinfo .info p {
+  line-height: 18px;
+}
+.download {
+  display: block;
+  margin-top: 24px;
+}
+.download .tit {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  color: #008cbe;
+  padding: 8px 0;
+  border-bottom: 1px solid #f29a76;
+}
+.download table,
+.download .downlist {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.download table tr,
+.download .downlist tr {
+  display: block;
+  margin: 4px auto;
+}
+.download table td,
+.download .downlist td {
+  padding-left: 28px;
+}
+.download table td img,
+.download .downlist td img {
+  padding-left: 8px;
+}
+.download table td a:hover,
+.download .downlist td a:hover {
+  color: #f29a76;
+  text-decoration: underline;
 }
 .sidemenu {
   display: block;
@@ -841,4 +899,62 @@ input:-ms-input-placeholder {
   border-top-right-radius: 4px;
   background: #fff;
   overflow: hidden;
+}
+.sidebar,
+.sidebar ul,
+.sidebar li {
+  list-style: none;
+}
+.sidebar ul {
+  padding: 0;
+  margin: 0 0 0 18px;
+}
+.sidebar {
+  padding: 4px;
+  margin: 0px;
+}
+.sidebar > li {
+  border-bottom: 1px dotted #ddd;
+}
+.sidebar > li li {
+  margin-top: 1px;
+  border-bottom: 1px dotted #ddd;
+}
+.sidebar a {
+  color: #008cbe;
+  display: block;
+  outline: none;
+  text-decoration: none;
+}
+.sidebar li > a > span {
+  float: right;
+  font-size: 19px;
+  font-weight: bolder;
+}
+.sidebar li > a:hover > span {
+  color: #3a494e;
+}
+.sidebar li > a > span:after {
+  content: '\25be';
+}
+.sidebar li.open > a > span:after {
+  content: '\25b4';
+}
+.sidebar a:hover,
+.sidebar li.active > a {
+  background-color: #82deff;
+  color: #3a494e;
+}
+.sidebar > li.active > a {
+  background-color: #82deff;
+}
+.sidebar li a {
+  font-size: 12px;
+  line-height: 18px;
+  padding: 12px 8px;
+}
+.sidebar > li > a {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 12px 8px;
 }
